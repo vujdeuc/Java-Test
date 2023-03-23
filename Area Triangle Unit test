@@ -1,0 +1,26 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class CalculateTriangleAreaTest {
+
+    @Test
+    void calculateTriangleArea_withPositiveValues_returnsCorrectArea() {
+        double base = 10;
+        double height = 5;
+        double expectedArea = 25;
+
+        double actualArea = calculateTriangleArea(base, height);
+
+        assertEquals(expectedArea, actualArea);
+    }
+
+    @Test
+    void calculateTriangleArea_withNegativeValues_returnsCorrectArea() {
+        double base = -10;
+        double height = -5;
+        double expectedArea = 25;
+
+        double actualArea = calculateTriangleArea(base, height);
+
+        assertEquals(expectedArea, actualArea);
+    }
+}
